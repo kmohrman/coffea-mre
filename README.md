@@ -3,7 +3,7 @@ This directory contains files for reproducing an example of an error.
 
 ### The error  
 
-We see this error when running in an environment with `coffea 0.6.49`, but do not see the error when in an environment with coffea `0.6.39`. We are not sure if we are just doing something wrong, or if it is maybe due to a difference between the two versions.
+We see this error when running in an environment with `coffea 0.6.49`, but do not see the error when in an environment with `coffea 0.6.39`. We are not sure if we are just doing something wrong, or if it is maybe due to a difference between the two versions.
 
 The error is `ValueError: object of too small depth for desired array` and seems to be caused by this line in the processor: `hout['dummy'].fill(sample=dataset, dummy=1, weight=events.size)`.
 

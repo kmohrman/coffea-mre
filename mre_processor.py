@@ -2,7 +2,7 @@ import numpy as np
 from coffea import hist, processor
 
 class AnalysisProcessor(processor.ProcessorABC):
-    def __init__(self, samples):
+    def __init__(self):
         # Create the histograms
         self._accumulator = processor.dict_accumulator({
         'dummy'   : hist.Hist("Dummy" , hist.Cat("sample", "sample"), hist.Bin("dummy", "Number of events", 1, 0, 1)),
